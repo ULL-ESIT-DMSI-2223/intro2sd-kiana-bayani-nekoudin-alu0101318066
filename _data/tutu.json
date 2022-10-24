@@ -1,0 +1,5 @@
+{ 
+    "titulo": "The Walking Dead",
+    "temporadas": 10,
+    "colores": ["rojo", "verde", "azul"]
+}

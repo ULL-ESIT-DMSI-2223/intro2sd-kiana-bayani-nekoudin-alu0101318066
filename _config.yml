@@ -11,13 +11,13 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Introducción al Desarrollo de Sistemas"
+title                    : "Desarrollo de Sistemas"
 title_separator          : "-"
-subtitle                 : "A Jekyll theme"
-name                     : &name "Michael Rose" # &name is a YAML anchor which can be *referenced later
+subtitle                 : "Introducción al Desarrollo de Sistemas"
+name                     : &name "Kiana Bayani" # &name is a YAML anchor which can be *referenced later
 description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
 url                      : https://mmistakes.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/intro2sd-template/" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/intro2sd-kiana-bayani-nekoudin-alu0101318066/" # the subpath of your site, e.g. "/blog"
 repository               : "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -99,7 +99,7 @@ analytics:
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/michael-rose.jpg"
-  bio              : "A Student"
+  bio              : "Estudiante de Ingeniería Informatica"
   location         : "Islas Canarias"
   links:
     - label: "Made Mistakes"
