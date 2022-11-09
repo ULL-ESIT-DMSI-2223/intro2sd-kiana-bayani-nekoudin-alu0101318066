@@ -5,11 +5,11 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-<html lang="en" class="no-js">
+<html lang="es" class="no-js">
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Page Not Found - Desarrollo de Sistemas</title>
+<!-- begin _includes/seo.html --><title>404 Página no encontrada - Desarrollo de Sistemas</title>
 <meta name="description" content="Page not found. Your pixels are in another canvas.">
 
 
@@ -18,9 +18,9 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Desarrollo de Sistemas">
-<meta property="og:title" content="Page Not Found">
+<meta property="og:title" content="404 Página no encontrada">
 <meta property="og:url" content="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/404.html">
 
 
@@ -33,7 +33,7 @@
 
 
   <meta name="twitter:site" content="@mmistakes">
-  <meta name="twitter:title" content="Page Not Found">
+  <meta name="twitter:title" content="404 Página no encontrada">
   <meta name="twitter:description" content="Page not found. Your pixels are in another canvas.">
   <meta name="twitter:url" content="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/404.html">
 
@@ -179,7 +179,7 @@
   
     <div class="author__avatar">
       
-        <img src="/intro2sd-kiana-bayani-nekoudin-alu0101318066/assets/images/michael-rose.jpg" alt="Kiana Bayani" itemprop="image">
+        <img src="/intro2sd-kiana-bayani-nekoudin-alu0101318066/assets/images/kiana_bayani.jpg" alt="Kiana Bayani" itemprop="image">
       
     </div>
   
@@ -290,7 +290,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Page Not Found">
+    <meta itemprop="headline" content="404 Página no encontrada">
     <meta itemprop="description" content="Page not found. Your pixels are in another canvas.">
     
     
@@ -298,7 +298,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Page Not Found
+          <h1 id="page-title" class="page__title" itemprop="headline">404 Página no encontrada
 </h1>
           
 
@@ -308,7 +308,72 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>Sorry, but the page you were trying to view does not exist.</p>
+        <p style="text-align: justify;">La página que está buscando fue movida, eliminada, renombrada o puede que nunca haya existido. Por favor, compuebe su dirección URL o <a href="https://ull-esit-dmsi-2223.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/">vuelva al inicio</a></p>
+
+<div align="center">
+<style>
+img, #quote, #comment-cat {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#author {
+  float: right;
+}
+</style>
+
+
+<div id="comment-cat"></div>
+<div id="cat"></div>
+<br />
+<div id="quote"></div>
+<div id="author"></div>
+
+
+<script type="text/javascript">
+
+/*
+  https://docs.thecatapi.com/ 
+*/
+const URL = 'https://api.thecatapi.com/v1/images/search?size=full';
+
+(async function() {
+  try {
+    
+    // CAT 
+    let divTitle = document.getElementById("comment-cat");
+    
+    let divcat = document.getElementById("cat");
+    let response = await fetch(URL, {
+       headers: {
+       'x-api-key': "56a4f1cc-7f60-468d-9dba-e4b6f04b7c7d"
+       }
+    });
+    let cat = await response.json();
+    // console.log(cat);   
+    let img = document.createElement("img");
+    let title = document.createElement("h2");
+    title.innerText = "Consuélate con un gatito";   
+    divTitle.append(title);
+    img.src = cat[0].url;
+    divcat.appendChild(img);   
+
+    // QUOTE
+    const quoteDiv = document.getElementById("quote");
+    const authorDiv = document.getElementById("author");
+    
+    const quoteRes = await fetch('https://api.quotable.io/random');
+    const data = await quoteRes.json();
+    quoteDiv.innerHTML = `<h2>${data.content}</h2>`;
+    authorDiv.innerHTML = `<h3>—${data.author}</h3>`;
+  }
+  catch(e) { 
+    console.log(e);
+  }
+})();
+</script>
+ 
+</div>
 
         
       </section>

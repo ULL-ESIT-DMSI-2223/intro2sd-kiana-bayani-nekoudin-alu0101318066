@@ -1,0 +1,613 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="es" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Introducción al Desarrollo de Sistemas - Desarrollo de Sistemas</title>
+<meta name="description" content="¿Qué es el desarrollo de sistemas?  Es el proceso de tomar un conjunto de requisitos comerciales y, a través de una serie de etapas estructuradas, traducirlos en un sistema IT operativo.  El desarrollo de sistemas y otras disciplinas  1. Gestión de proyectos  Planifica la empresa, moviliza los recursos necesarios y controla y coordina el trabajo. También asegura que las diversas partes interesadas se mantengan al tanto y comprometidas con el éxito del proyecto. Una buena gestión de proyectos libera al equipo de desarrollo para que se concentre en al difícil tarea técnnica de diseñar e implementar la solución.  2. Análisis de negocios  Se preocupa por investigar la situación empresarial y averiguar cuáles son los problemas a resolver o las oportunidades a explotar. Se trata de desarrollar soluciones holísticas a los problemas de negocio. También son importantes para obtener, documentar y gestionar los requisitos de los sistemas y servicios de IT nuevos o mejorados.  3. Arquitectura de sistemas  Desarrollar una arquitectura para que la organización apoye y coordine sus sistemas y proporcione una plataforma coherente para la expansión y el desarrollo.  4. Programación  Esta es un área especializada que requiere altos niveles de experiencia técnica, sobre todo en cómo explotar al máximo las posibilidades que ofrecen el hardware y el software disponibles.  5. Pruebas  Para demostrar que el sistema no funciona. Es un proceso iterativo y, cuando el evaluador se esfuerza por identificar más defectos en cualquier versión, se puede afirmar con cierta confianza que el sistema parece ser satisfactorio. Ninguna prueba puede garantizar que el software esté cien por ciento libre de errores.  6. Gestión de la configuración de control de cambios  Relacionado con el control de cambios, que es un proceso para gestionar cambios en un sistema o producto de forma controlada.  7. Control de calidad  Consiste en los procesos que se emplean dentro de un equipo de proyecto para garantizar que los productos entregados cumplan con los criterios de calidad definidos.  8. Aseguramiento de la calidad  Es un proceso externo que se asegura que se está ejerciendo el control de calidad; también establece cosas como estándares para ayudar en el control de calidad.  9. Gestión de servicios  Preocupado por la gestión y el mantenimiento de los servicios prestados por los sistemas de IT.  Deslocalización y subcontratación de desarrollo de sistemas  Dos cambios que han afectado a muchas organizaciones en los últimos años han sido:     Deslocalización:  Implica el uso de recursos de desarrollo en otros países, generalmente porque se pueden obtener recursos de alta calidad a un costo considerablemente menor que en el país de la organización.      Subcontratación:  Significa ceder el trabajo de desarrollo a empresas y consultorías especializadas en servicios IT.   A veces se combinan pero también tienen posibles inconvenientes:                 Deslocalización       Subcontratación                       Pueden suceder retrasos y dificultades de comunicación. Refuerza la necesidad de una mayor precisión en la definición de los requisitos comerciales, lo cual es bueno.       La organización del cliente pierde el control directo de los sistemas que son críticos para sus objetivos comerciales.           Ahmed, Tahir, et al. Developing Information Systems : Practical guidance for IT professionals, edited by James Cadle, BCS Learning &amp; Development Limited, 2014. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bull-ebooks/detail.action?docID=1713962.">
+
+
+  <meta name="author" content="Kiana Bayani">
+  
+  <meta property="article:author" content="Kiana Bayani">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Desarrollo de Sistemas">
+<meta property="og:title" content="Introducción al Desarrollo de Sistemas">
+<meta property="og:url" content="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/informe/2022-10-01-intro2sd/">
+
+
+  <meta property="og:description" content="¿Qué es el desarrollo de sistemas?  Es el proceso de tomar un conjunto de requisitos comerciales y, a través de una serie de etapas estructuradas, traducirlos en un sistema IT operativo.  El desarrollo de sistemas y otras disciplinas  1. Gestión de proyectos  Planifica la empresa, moviliza los recursos necesarios y controla y coordina el trabajo. También asegura que las diversas partes interesadas se mantengan al tanto y comprometidas con el éxito del proyecto. Una buena gestión de proyectos libera al equipo de desarrollo para que se concentre en al difícil tarea técnnica de diseñar e implementar la solución.  2. Análisis de negocios  Se preocupa por investigar la situación empresarial y averiguar cuáles son los problemas a resolver o las oportunidades a explotar. Se trata de desarrollar soluciones holísticas a los problemas de negocio. También son importantes para obtener, documentar y gestionar los requisitos de los sistemas y servicios de IT nuevos o mejorados.  3. Arquitectura de sistemas  Desarrollar una arquitectura para que la organización apoye y coordine sus sistemas y proporcione una plataforma coherente para la expansión y el desarrollo.  4. Programación  Esta es un área especializada que requiere altos niveles de experiencia técnica, sobre todo en cómo explotar al máximo las posibilidades que ofrecen el hardware y el software disponibles.  5. Pruebas  Para demostrar que el sistema no funciona. Es un proceso iterativo y, cuando el evaluador se esfuerza por identificar más defectos en cualquier versión, se puede afirmar con cierta confianza que el sistema parece ser satisfactorio. Ninguna prueba puede garantizar que el software esté cien por ciento libre de errores.  6. Gestión de la configuración de control de cambios  Relacionado con el control de cambios, que es un proceso para gestionar cambios en un sistema o producto de forma controlada.  7. Control de calidad  Consiste en los procesos que se emplean dentro de un equipo de proyecto para garantizar que los productos entregados cumplan con los criterios de calidad definidos.  8. Aseguramiento de la calidad  Es un proceso externo que se asegura que se está ejerciendo el control de calidad; también establece cosas como estándares para ayudar en el control de calidad.  9. Gestión de servicios  Preocupado por la gestión y el mantenimiento de los servicios prestados por los sistemas de IT.  Deslocalización y subcontratación de desarrollo de sistemas  Dos cambios que han afectado a muchas organizaciones en los últimos años han sido:     Deslocalización:  Implica el uso de recursos de desarrollo en otros países, generalmente porque se pueden obtener recursos de alta calidad a un costo considerablemente menor que en el país de la organización.      Subcontratación:  Significa ceder el trabajo de desarrollo a empresas y consultorías especializadas en servicios IT.   A veces se combinan pero también tienen posibles inconvenientes:                 Deslocalización       Subcontratación                       Pueden suceder retrasos y dificultades de comunicación. Refuerza la necesidad de una mayor precisión en la definición de los requisitos comerciales, lo cual es bueno.       La organización del cliente pierde el control directo de los sistemas que son críticos para sus objetivos comerciales.           Ahmed, Tahir, et al. Developing Information Systems : Practical guidance for IT professionals, edited by James Cadle, BCS Learning &amp; Development Limited, 2014. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bull-ebooks/detail.action?docID=1713962.">
+
+
+
+  <meta property="og:image" content="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/assets/images/site-logo.png">
+
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:title" content="Introducción al Desarrollo de Sistemas">
+  <meta name="twitter:description" content="¿Qué es el desarrollo de sistemas?  Es el proceso de tomar un conjunto de requisitos comerciales y, a través de una serie de etapas estructuradas, traducirlos en un sistema IT operativo.  El desarrollo de sistemas y otras disciplinas  1. Gestión de proyectos  Planifica la empresa, moviliza los recursos necesarios y controla y coordina el trabajo. También asegura que las diversas partes interesadas se mantengan al tanto y comprometidas con el éxito del proyecto. Una buena gestión de proyectos libera al equipo de desarrollo para que se concentre en al difícil tarea técnnica de diseñar e implementar la solución.  2. Análisis de negocios  Se preocupa por investigar la situación empresarial y averiguar cuáles son los problemas a resolver o las oportunidades a explotar. Se trata de desarrollar soluciones holísticas a los problemas de negocio. También son importantes para obtener, documentar y gestionar los requisitos de los sistemas y servicios de IT nuevos o mejorados.  3. Arquitectura de sistemas  Desarrollar una arquitectura para que la organización apoye y coordine sus sistemas y proporcione una plataforma coherente para la expansión y el desarrollo.  4. Programación  Esta es un área especializada que requiere altos niveles de experiencia técnica, sobre todo en cómo explotar al máximo las posibilidades que ofrecen el hardware y el software disponibles.  5. Pruebas  Para demostrar que el sistema no funciona. Es un proceso iterativo y, cuando el evaluador se esfuerza por identificar más defectos en cualquier versión, se puede afirmar con cierta confianza que el sistema parece ser satisfactorio. Ninguna prueba puede garantizar que el software esté cien por ciento libre de errores.  6. Gestión de la configuración de control de cambios  Relacionado con el control de cambios, que es un proceso para gestionar cambios en un sistema o producto de forma controlada.  7. Control de calidad  Consiste en los procesos que se emplean dentro de un equipo de proyecto para garantizar que los productos entregados cumplan con los criterios de calidad definidos.  8. Aseguramiento de la calidad  Es un proceso externo que se asegura que se está ejerciendo el control de calidad; también establece cosas como estándares para ayudar en el control de calidad.  9. Gestión de servicios  Preocupado por la gestión y el mantenimiento de los servicios prestados por los sistemas de IT.  Deslocalización y subcontratación de desarrollo de sistemas  Dos cambios que han afectado a muchas organizaciones en los últimos años han sido:     Deslocalización:  Implica el uso de recursos de desarrollo en otros países, generalmente porque se pueden obtener recursos de alta calidad a un costo considerablemente menor que en el país de la organización.      Subcontratación:  Significa ceder el trabajo de desarrollo a empresas y consultorías especializadas en servicios IT.   A veces se combinan pero también tienen posibles inconvenientes:                 Deslocalización       Subcontratación                       Pueden suceder retrasos y dificultades de comunicación. Refuerza la necesidad de una mayor precisión en la definición de los requisitos comerciales, lo cual es bueno.       La organización del cliente pierde el control directo de los sistemas que son críticos para sus objetivos comerciales.           Ahmed, Tahir, et al. Developing Information Systems : Practical guidance for IT professionals, edited by James Cadle, BCS Learning &amp; Development Limited, 2014. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bull-ebooks/detail.action?docID=1713962.">
+  <meta name="twitter:url" content="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/informe/2022-10-01-intro2sd/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/assets/images/site-logo.png">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2022-10-01T00:00:00-04:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/informe/2022-10-01-intro2sd/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Kiana Bayani",
+      "url": "https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/",
+      "sameAs": ["https://twitter.com/mmistakes","https://www.facebook.com/michaelrose"]
+    
+  }
+</script>
+
+
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" />
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/feed.xml" type="application/atom+xml" rel="alternate" title="Desarrollo de Sistemas Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/">
+          Desarrollo de Sistemas
+          <span class="site-subtitle">Introducción al Desarrollo de Sistemas</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/terms/">Terms &amp; Privacy Policy</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/intro2sd-kiana-bayani-nekoudin-alu0101318066/assets/images/kiana_bayani.jpg" alt="Kiana Bayani" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Kiana Bayani</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Estudiante de Ingeniería Informatica</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Islas Canarias</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://mademistakes.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Made Mistakes</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Introducción al Desarrollo de Sistemas">
+    <meta itemprop="description" content="¿Qué es el desarrollo de sistemas?Es el proceso de tomar un conjunto de requisitos comerciales y, a través de una serie de etapas estructuradas, traducirlos en un sistema IT operativo.El desarrollo de sistemas y otras disciplinas1. Gestión de proyectosPlanifica la empresa, moviliza los recursos necesarios y controla y coordina el trabajo. También asegura que las diversas partes interesadas se mantengan al tanto y comprometidas con el éxito del proyecto. Una buena gestión de proyectos libera al equipo de desarrollo para que se concentre en al difícil tarea técnnica de diseñar e implementar la solución.2. Análisis de negociosSe preocupa por investigar la situación empresarial y averiguar cuáles son los problemas a resolver o las oportunidades a explotar. Se trata de desarrollar soluciones holísticas a los problemas de negocio. También son importantes para obtener, documentar y gestionar los requisitos de los sistemas y servicios de IT nuevos o mejorados.3. Arquitectura de sistemasDesarrollar una arquitectura para que la organización apoye y coordine sus sistemas y proporcione una plataforma coherente para la expansión y el desarrollo.4. ProgramaciónEsta es un área especializada que requiere altos niveles de experiencia técnica, sobre todo en cómo explotar al máximo las posibilidades que ofrecen el hardware y el software disponibles.5. PruebasPara demostrar que el sistema no funciona. Es un proceso iterativo y, cuando el evaluador se esfuerza por identificar más defectos en cualquier versión, se puede afirmar con cierta confianza que el sistema parece ser satisfactorio. Ninguna prueba puede garantizar que el software esté cien por ciento libre de errores.6. Gestión de la configuración de control de cambiosRelacionado con el control de cambios, que es un proceso para gestionar cambios en un sistema o producto de forma controlada.7. Control de calidadConsiste en los procesos que se emplean dentro de un equipo de proyecto para garantizar que los productos entregados cumplan con los criterios de calidad definidos.8. Aseguramiento de la calidadEs un proceso externo que se asegura que se está ejerciendo el control de calidad; también establece cosas como estándares para ayudar en el control de calidad.9. Gestión de serviciosPreocupado por la gestión y el mantenimiento de los servicios prestados por los sistemas de IT.Deslocalización y subcontratación de desarrollo de sistemasDos cambios que han afectado a muchas organizaciones en los últimos años han sido:  Deslocalización: Implica el uso de recursos de desarrollo en otros países, generalmente porque se pueden obtener recursos de alta calidad a un costo considerablemente menor que en el país de la organización.  Subcontratación: Significa ceder el trabajo de desarrollo a empresas y consultorías especializadas en servicios IT.A veces se combinan pero también tienen posibles inconvenientes:            Deslocalización      Subcontratación                  Pueden suceder retrasos y dificultades de comunicación. Refuerza la necesidad de una mayor precisión en la definición de los requisitos comerciales, lo cual es bueno.      La organización del cliente pierde el control directo de los sistemas que son críticos para sus objetivos comerciales.      Ahmed, Tahir, et al. Developing Information Systems : Practical guidance for IT professionals, edited by James Cadle, BCS Learning &amp; Development Limited, 2014. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bull-ebooks/detail.action?docID=1713962.">
+    <meta itemprop="datePublished" content="2022-10-01T00:00:00-04:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Introducción al Desarrollo de Sistemas
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#qué-es-el-desarrollo-de-sistemas">¿Qué es el desarrollo de sistemas?</a></li><li><a href="#el-desarrollo-de-sistemas-y-otras-disciplinas">El desarrollo de sistemas y otras disciplinas</a><ul><li><a href="#1-gestión-de-proyectos">1. Gestión de proyectos</a></li><li><a href="#2-análisis-de-negocios">2. Análisis de negocios</a></li><li><a href="#3-arquitectura-de-sistemas">3. Arquitectura de sistemas</a></li><li><a href="#4-programación">4. Programación</a></li><li><a href="#5-pruebas">5. Pruebas</a></li><li><a href="#6-gestión-de-la-configuración-de-control-de-cambios">6. Gestión de la configuración de control de cambios</a></li><li><a href="#7-control-de-calidad">7. Control de calidad</a></li><li><a href="#8-aseguramiento-de-la-calidad">8. Aseguramiento de la calidad</a></li><li><a href="#9-gestión-de-servicios">9. Gestión de servicios</a></li></ul></li><li><a href="#deslocalización-y-subcontratación-de-desarrollo-de-sistemas">Deslocalización y subcontratación de desarrollo de sistemas</a></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h2 id="qué-es-el-desarrollo-de-sistemas"><strong>¿Qué es el desarrollo de sistemas?</strong></h2>
+
+<p style="text-align: justify;">Es el proceso de tomar un conjunto de requisitos comerciales y, a través de una serie de etapas estructuradas, traducirlos en un sistema IT operativo.</p>
+
+<h2 id="el-desarrollo-de-sistemas-y-otras-disciplinas"><strong>El desarrollo de sistemas y otras disciplinas</strong></h2>
+
+<h4 id="1-gestión-de-proyectos">1. <strong>Gestión de proyectos</strong></h4>
+
+<p style="text-align: justify;">Planifica la empresa, moviliza los recursos necesarios y controla y coordina el trabajo. También asegura que las diversas partes interesadas se mantengan al tanto y comprometidas con el éxito del proyecto. Una buena gestión de proyectos libera al equipo de desarrollo para que se concentre en al difícil tarea técnnica de diseñar e implementar la solución.</p>
+
+<h4 id="2-análisis-de-negocios">2. <strong>Análisis de negocios</strong></h4>
+
+<p style="text-align: justify;">Se preocupa por investigar la situación empresarial y averiguar cuáles son los problemas a resolver o las oportunidades a explotar. Se trata de desarrollar soluciones holísticas a los problemas de negocio. También son importantes para obtener, documentar y gestionar los requisitos de los sistemas y servicios de IT nuevos o mejorados.</p>
+
+<h4 id="3-arquitectura-de-sistemas">3. <strong>Arquitectura de sistemas</strong></h4>
+
+<p style="text-align: justify;">Desarrollar una arquitectura para que la organización apoye y coordine sus sistemas y proporcione una plataforma coherente para la expansión y el desarrollo.</p>
+
+<h4 id="4-programación">4. <strong>Programación</strong></h4>
+
+<p style="text-align: justify;">Esta es un área especializada que requiere altos niveles de experiencia técnica, sobre todo en cómo explotar al máximo las posibilidades que ofrecen el hardware y el software disponibles.</p>
+
+<h4 id="5-pruebas">5. <strong>Pruebas</strong></h4>
+
+<p style="text-align: justify;">Para demostrar que el sistema no funciona. Es un proceso iterativo y, cuando el evaluador se esfuerza por identificar más defectos en cualquier versión, se puede afirmar con cierta confianza que el sistema parece ser satisfactorio. Ninguna prueba puede garantizar que el software esté cien por ciento libre de errores.</p>
+
+<h4 id="6-gestión-de-la-configuración-de-control-de-cambios">6. <strong>Gestión de la configuración de control de cambios</strong></h4>
+
+<p style="text-align: justify;">Relacionado con el control de cambios, que es un proceso para gestionar cambios en un sistema o producto de forma controlada.</p>
+
+<h4 id="7-control-de-calidad">7. <strong>Control de calidad</strong></h4>
+
+<p style="text-align: justify;">Consiste en los procesos que se emplean dentro de un equipo de proyecto para garantizar que los productos entregados cumplan con los criterios de calidad definidos.</p>
+
+<h4 id="8-aseguramiento-de-la-calidad">8. <strong>Aseguramiento de la calidad</strong></h4>
+
+<p style="text-align: justify;">Es un proceso externo que se asegura que se está ejerciendo el control de calidad; también establece cosas como estándares para ayudar en el control de calidad.</p>
+
+<h4 id="9-gestión-de-servicios">9. <strong>Gestión de servicios</strong></h4>
+
+<p style="text-align: justify;">Preocupado por la gestión y el mantenimiento de los servicios prestados por los sistemas de IT.</p>
+
+<h3 id="deslocalización-y-subcontratación-de-desarrollo-de-sistemas"><strong>Deslocalización y subcontratación de desarrollo de sistemas</strong></h3>
+
+<p>Dos cambios que han afectado a muchas organizaciones en los últimos años han sido:</p>
+
+<ul>
+  <li>Deslocalización: 
+Implica el uso de recursos de desarrollo en otros países, generalmente porque se pueden obtener recursos de alta calidad a un costo considerablemente menor que en el país de la organización.</li>
+</ul>
+
+<ul style="text-align: justify;">
+  <li>Subcontratación: 
+Significa ceder el trabajo de desarrollo a empresas y consultorías especializadas en servicios IT.</li>
+</ul>
+
+<p style="text-align: justify;">A veces se combinan pero también tienen posibles inconvenientes:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><strong>Deslocalización</strong></th>
+      <th style="text-align: center"><strong>Subcontratación</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Pueden suceder retrasos y dificultades de comunicación. Refuerza la necesidad de una mayor precisión en la definición de los requisitos comerciales, lo cual es bueno.</td>
+      <td style="text-align: center">La organización del cliente pierde el control directo de los sistemas que son críticos para sus objetivos comerciales.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ahmed, Tahir, et al. Developing Information Systems : Practical guidance for IT professionals, edited by James Cadle, BCS Learning &amp; Development Limited, 2014. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bull-ebooks/detail.action?docID=1713962.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/tags/#post-formats" class="page__taxonomy-item" rel="tag">Post Formats</a><span class="sep">, </span>
+    
+      <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/tags/#readability" class="page__taxonomy-item" rel="tag">readability</a><span class="sep">, </span>
+    
+      <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/tags/#standard" class="page__taxonomy-item" rel="tag">standard</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/categories/#post-formats" class="page__taxonomy-item" rel="tag">Post Formats</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-10-01T00:00:00-04:00">October 1, 2022</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=mmistakes&text=Introducci%C3%B3n+al+Desarrollo+de+Sistemas%20https%3A%2F%2Fmmistakes.github.io%2Fintro2sd-kiana-bayani-nekoudin-alu0101318066%2Finforme%2F2022-10-01-intro2sd%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmmistakes.github.io%2Fintro2sd-kiana-bayani-nekoudin-alu0101318066%2Finforme%2F2022-10-01-intro2sd%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmmistakes.github.io%2Fintro2sd-kiana-bayani-nekoudin-alu0101318066%2Finforme%2F2022-10-01-intro2sd%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/informe/2022-11-09-info/" class="pagination--pager" title="Outsourcing: 3 pasos para externalizar su logística con éxito
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      <div align="center" style="margin: 1em 0;">
+        <ins class="adsbygoogle"
+             style="display:block; border-bottom: initial;"
+             data-ad-client="ca-pub-7328585512091257"
+             data-ad-slot="3049671934"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+  <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Kiana Bayani. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/intro2sd-kiana-bayani-nekoudin-alu0101318066/assets/js/main.min.js"></script>
+
+
+<!-- Including InstantSearch.js library and styling -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css">
+
+<script>
+// Instanciating InstantSearch.js with Algolia credentials
+const search = instantsearch({
+  appId: 'QB6HVGBSBA',
+  apiKey: '9d5014e5bbc77372547bce778dfa5663',
+  indexName: 'minimal_mistakes',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ]
+  }
+});
+
+const hitTemplate = function(hit) {
+  const url = hit.url;
+  const title = hit._highlightResult.title.value;
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="list__item">
+      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/${url}">${title}</a></h2>
+        <div class="archive__item-excerpt" itemprop="description">${content}</div>
+      </article>
+    </div>
+  `;
+}
+
+// Adding searchbar and results widgets
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '.search-searchbar',
+    poweredBy: true,
+    placeholder: 'Enter your search term...'
+  })
+);
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '.search-hits',
+    templates: {
+      item: hitTemplate,
+      empty: 'No results',
+    }
+  })
+);
+
+// Starting the search only when toggle is clicked
+$(document).ready(function () {
+  $(".search__toggle").on("click", function() {
+    if(!search.started) {
+      search.start();
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+    <style>
+      .google-auto-placed {
+        margin: 2em auto;
+      }
+    </style>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  </body>
+</html>

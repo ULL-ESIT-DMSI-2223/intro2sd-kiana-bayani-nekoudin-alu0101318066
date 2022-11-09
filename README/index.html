@@ -1,0 +1,814 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="es" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>README P04: Introducción al Desarrollo de Sistemas - Desarrollo de Sistemas</title>
+<meta name="description" content="Reconfiguración de _config.yml Al editar el archivo _config.yml se permite configurar la mayoría de los valores de Jekyll, como los temas y los plugins del sitio web.  En este caso, se han modificado los siguientes parametros:                 VALORES       CAMBIOS                       minimal_mistakes_skin       air                 locale       es-ES                 title       Desarollo de Sistemas                 subtitle       Introducción al Desarrollo de Sistemas                 name       Kiana Bayani                 description       Creación de una página web haciendo uso de Jekyll para la asignatura de DMSI                 base_url       /intro2sd-kiana-bayani-nekoudin-alu0101318066/           Despliegue del sitio web en GitHub Pages haciendo uso de Jekyll Para poder hacer el despliegue de nuestra página usando gh-pages hay que realizar el siguiente comando: npx gh-pages -d _site.     npx: es un ejecutor de paquetes basados en Node.js.   gh-pages: es un paquete que contiene un módulo de despliegue automático que realiza las tareas necesarias para desplegar nuestra página web del repositorio en los servidores de gh-pages. Es decir, crea automáticamente una rama gh-pages en nuestro repositorio donde sitúa los archivos necesarios para el despliegue de la página web.      Enlazamos, además, la página web a nuestro perfil:  Despliegue del sitio web en Netlify  Utilización de liquid Se ha creado un archivo denominado tutu.json en la carpeta _data donde se encuentra un poco de información sobre el tema resumido. Para que esto sea visible en el informe, se ha hecho uso de liquid. El cual se trata de un lenguaje de plantilla que nos permite exhibir datos en la misma.  Trozo de código utilizado en la página intro2sd.md:       {% for contenidos in site.data.tarea.desarrollo_sistemas.deslocalizacion -%}      * {{ contenidos }}     {% for contenidosd in site.data.tarea.desarrollo_sistemas.contenido_deslocalizacion -%}     {{ contenidosd }}     {% endfor %}     {% endfor -%}       {% for contenidos in site.data.tarea.desarrollo_sistemas.subcontratacion -%}      * {{ contenidos }}     {% for contenidoss in site.data.tarea.desarrollo_sistemas.contenido_subcontratacion -%}          {{ contenidoss }}     {% endfor %}     {% endfor -%}    Trozo de código utilizado en la página README.md:   El capítulo resumido es el {{ site.data.tareas.capitulos[1] }} del libro {{ site.data.tareas.titulo }}.    Creación de una Jekyll Collection Se ha creado una colección que incluye un post con un vídeo de youtube y el resumen realizado.  En el archivo _config.yml, se define la colección en la sección de collections denominada informe:    Se añade el parámetro output = true para que Jekyll cree una página:    El capítulo resumido es el 1 del libro Introducción al Desarrollo de Sistemas.  Creación de una página 404 personalizada Se ha creado un fichero denominado 404.md donde se han detallado los parámetros necesarios para la creación de la página 404 de nuestra web.  Se ha hecho uso de los servicios web CAT API y QUOTE API para que cada vez que se entre a la página nos muestre una imagen aleatoria de un gato y una cita famosa con su autor.  Un ejemplo de la página 404 es la siguiente:">
+
+
+  <meta name="author" content="Kiana Bayani">
+  
+  <meta property="article:author" content="Kiana Bayani">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Desarrollo de Sistemas">
+<meta property="og:title" content="README P04: Introducción al Desarrollo de Sistemas">
+<meta property="og:url" content="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/README/">
+
+
+  <meta property="og:description" content="Reconfiguración de _config.yml Al editar el archivo _config.yml se permite configurar la mayoría de los valores de Jekyll, como los temas y los plugins del sitio web.  En este caso, se han modificado los siguientes parametros:                 VALORES       CAMBIOS                       minimal_mistakes_skin       air                 locale       es-ES                 title       Desarollo de Sistemas                 subtitle       Introducción al Desarrollo de Sistemas                 name       Kiana Bayani                 description       Creación de una página web haciendo uso de Jekyll para la asignatura de DMSI                 base_url       /intro2sd-kiana-bayani-nekoudin-alu0101318066/           Despliegue del sitio web en GitHub Pages haciendo uso de Jekyll Para poder hacer el despliegue de nuestra página usando gh-pages hay que realizar el siguiente comando: npx gh-pages -d _site.     npx: es un ejecutor de paquetes basados en Node.js.   gh-pages: es un paquete que contiene un módulo de despliegue automático que realiza las tareas necesarias para desplegar nuestra página web del repositorio en los servidores de gh-pages. Es decir, crea automáticamente una rama gh-pages en nuestro repositorio donde sitúa los archivos necesarios para el despliegue de la página web.      Enlazamos, además, la página web a nuestro perfil:  Despliegue del sitio web en Netlify  Utilización de liquid Se ha creado un archivo denominado tutu.json en la carpeta _data donde se encuentra un poco de información sobre el tema resumido. Para que esto sea visible en el informe, se ha hecho uso de liquid. El cual se trata de un lenguaje de plantilla que nos permite exhibir datos en la misma.  Trozo de código utilizado en la página intro2sd.md:       {% for contenidos in site.data.tarea.desarrollo_sistemas.deslocalizacion -%}      * {{ contenidos }}     {% for contenidosd in site.data.tarea.desarrollo_sistemas.contenido_deslocalizacion -%}     {{ contenidosd }}     {% endfor %}     {% endfor -%}       {% for contenidos in site.data.tarea.desarrollo_sistemas.subcontratacion -%}      * {{ contenidos }}     {% for contenidoss in site.data.tarea.desarrollo_sistemas.contenido_subcontratacion -%}          {{ contenidoss }}     {% endfor %}     {% endfor -%}    Trozo de código utilizado en la página README.md:   El capítulo resumido es el {{ site.data.tareas.capitulos[1] }} del libro {{ site.data.tareas.titulo }}.    Creación de una Jekyll Collection Se ha creado una colección que incluye un post con un vídeo de youtube y el resumen realizado.  En el archivo _config.yml, se define la colección en la sección de collections denominada informe:    Se añade el parámetro output = true para que Jekyll cree una página:    El capítulo resumido es el 1 del libro Introducción al Desarrollo de Sistemas.  Creación de una página 404 personalizada Se ha creado un fichero denominado 404.md donde se han detallado los parámetros necesarios para la creación de la página 404 de nuestra web.  Se ha hecho uso de los servicios web CAT API y QUOTE API para que cada vez que se entre a la página nos muestre una imagen aleatoria de un gato y una cita famosa con su autor.  Un ejemplo de la página 404 es la siguiente:">
+
+
+
+  <meta property="og:image" content="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/assets/images/site-logo.png">
+
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:title" content="README P04: Introducción al Desarrollo de Sistemas">
+  <meta name="twitter:description" content="Reconfiguración de _config.yml Al editar el archivo _config.yml se permite configurar la mayoría de los valores de Jekyll, como los temas y los plugins del sitio web.  En este caso, se han modificado los siguientes parametros:                 VALORES       CAMBIOS                       minimal_mistakes_skin       air                 locale       es-ES                 title       Desarollo de Sistemas                 subtitle       Introducción al Desarrollo de Sistemas                 name       Kiana Bayani                 description       Creación de una página web haciendo uso de Jekyll para la asignatura de DMSI                 base_url       /intro2sd-kiana-bayani-nekoudin-alu0101318066/           Despliegue del sitio web en GitHub Pages haciendo uso de Jekyll Para poder hacer el despliegue de nuestra página usando gh-pages hay que realizar el siguiente comando: npx gh-pages -d _site.     npx: es un ejecutor de paquetes basados en Node.js.   gh-pages: es un paquete que contiene un módulo de despliegue automático que realiza las tareas necesarias para desplegar nuestra página web del repositorio en los servidores de gh-pages. Es decir, crea automáticamente una rama gh-pages en nuestro repositorio donde sitúa los archivos necesarios para el despliegue de la página web.      Enlazamos, además, la página web a nuestro perfil:  Despliegue del sitio web en Netlify  Utilización de liquid Se ha creado un archivo denominado tutu.json en la carpeta _data donde se encuentra un poco de información sobre el tema resumido. Para que esto sea visible en el informe, se ha hecho uso de liquid. El cual se trata de un lenguaje de plantilla que nos permite exhibir datos en la misma.  Trozo de código utilizado en la página intro2sd.md:       {% for contenidos in site.data.tarea.desarrollo_sistemas.deslocalizacion -%}      * {{ contenidos }}     {% for contenidosd in site.data.tarea.desarrollo_sistemas.contenido_deslocalizacion -%}     {{ contenidosd }}     {% endfor %}     {% endfor -%}       {% for contenidos in site.data.tarea.desarrollo_sistemas.subcontratacion -%}      * {{ contenidos }}     {% for contenidoss in site.data.tarea.desarrollo_sistemas.contenido_subcontratacion -%}          {{ contenidoss }}     {% endfor %}     {% endfor -%}    Trozo de código utilizado en la página README.md:   El capítulo resumido es el {{ site.data.tareas.capitulos[1] }} del libro {{ site.data.tareas.titulo }}.    Creación de una Jekyll Collection Se ha creado una colección que incluye un post con un vídeo de youtube y el resumen realizado.  En el archivo _config.yml, se define la colección en la sección de collections denominada informe:    Se añade el parámetro output = true para que Jekyll cree una página:    El capítulo resumido es el 1 del libro Introducción al Desarrollo de Sistemas.  Creación de una página 404 personalizada Se ha creado un fichero denominado 404.md donde se han detallado los parámetros necesarios para la creación de la página 404 de nuestra web.  Se ha hecho uso de los servicios web CAT API y QUOTE API para que cada vez que se entre a la página nos muestre una imagen aleatoria de un gato y una cita famosa con su autor.  Un ejemplo de la página 404 es la siguiente:">
+  <meta name="twitter:url" content="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/README/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/assets/images/site-logo.png">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2022-11-08T00:00:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/README/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Kiana Bayani",
+      "url": "https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/",
+      "sameAs": ["https://twitter.com/mmistakes","https://www.facebook.com/michaelrose"]
+    
+  }
+</script>
+
+
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" />
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/feed.xml" type="application/atom+xml" rel="alternate" title="Desarrollo de Sistemas Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/">
+          Desarrollo de Sistemas
+          <span class="site-subtitle">Introducción al Desarrollo de Sistemas</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/terms/">Terms &amp; Privacy Policy</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/intro2sd-kiana-bayani-nekoudin-alu0101318066/assets/images/kiana_bayani.jpg" alt="Kiana Bayani" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Kiana Bayani</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Estudiante de Ingeniería Informatica</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Islas Canarias</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://mademistakes.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Made Mistakes</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="README P04: Introducción al Desarrollo de Sistemas">
+    <meta itemprop="description" content="Reconfiguración de _config.ymlAl editar el archivo _config.yml se permite configurar la mayoría de los valores de Jekyll, como los temas y los plugins del sitio web.En este caso, se han modificado los siguientes parametros:            VALORES      CAMBIOS                  minimal_mistakes_skin      air              locale      es-ES              title      Desarollo de Sistemas              subtitle      Introducción al Desarrollo de Sistemas              name      Kiana Bayani              description      Creación de una página web haciendo uso de Jekyll para la asignatura de DMSI              base_url      /intro2sd-kiana-bayani-nekoudin-alu0101318066/      Despliegue del sitio web en GitHub Pages haciendo uso de JekyllPara poder hacer el despliegue de nuestra página usando gh-pages hay que realizar el siguiente comando: npx gh-pages -d _site.  npx: es un ejecutor de paquetes basados en Node.js.  gh-pages: es un paquete que contiene un módulo de despliegue automático que realiza las tareas necesarias para desplegar nuestra página web del repositorio en los servidores de gh-pages. Es decir, crea automáticamente una rama gh-pages en nuestro repositorio donde sitúa los archivos necesarios para el despliegue de la página web.Enlazamos, además, la página web a nuestro perfil:Despliegue del sitio web en NetlifyUtilización de liquidSe ha creado un archivo denominado tutu.json en la carpeta _data donde se encuentra un poco de información sobre el tema resumido. Para que esto sea visible en el informe, se ha hecho uso de liquid. El cual se trata de un lenguaje de plantilla que nos permite exhibir datos en la misma.Trozo de código utilizado en la página intro2sd.md:    {% for contenidos in site.data.tarea.desarrollo_sistemas.deslocalizacion -%}     * {{ contenidos }}    {% for contenidosd in site.data.tarea.desarrollo_sistemas.contenido_deslocalizacion -%}    {{ contenidosd }}    {% endfor %}    {% endfor -%}    {% for contenidos in site.data.tarea.desarrollo_sistemas.subcontratacion -%}     * {{ contenidos }}    {% for contenidoss in site.data.tarea.desarrollo_sistemas.contenido_subcontratacion -%}         {{ contenidoss }}    {% endfor %}    {% endfor -%}Trozo de código utilizado en la página README.md:El capítulo resumido es el {{ site.data.tareas.capitulos[1] }} del libro {{ site.data.tareas.titulo }}.Creación de una Jekyll CollectionSe ha creado una colección que incluye un post con un vídeo de youtube y el resumen realizado. En el archivo _config.yml, se define la colección en la sección de collections denominada informe:Se añade el parámetro output = true para que Jekyll cree una página:El capítulo resumido es el 1 del libro Introducción al Desarrollo de Sistemas.Creación de una página 404 personalizadaSe ha creado un fichero denominado 404.md donde se han detallado los parámetros necesarios para la creación de la página 404 de nuestra web.Se ha hecho uso de los servicios web CAT API y QUOTE API para que cada vez que se entre a la página nos muestre una imagen aleatoria de un gato y una cita famosa con su autor.Un ejemplo de la página 404 es la siguiente:">
+    <meta itemprop="datePublished" content="2022-11-08T00:00:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">README P04: Introducción al Desarrollo de Sistemas
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#reconfiguración-de-_configyml">Reconfiguración de _config.yml</a></li><li><a href="#despliegue-del-sitio-web-en-github-pages-haciendo-uso-de-jekyll">Despliegue del sitio web en GitHub Pages haciendo uso de Jekyll</a></li><li><a href="#despliegue-del-sitio-web-en-netlify">Despliegue del sitio web en Netlify</a></li><li><a href="#utilización-de-liquid">Utilización de liquid</a></li><li><a href="#creación-de-una-jekyll-collection">Creación de una Jekyll Collection</a></li><li><a href="#creación-de-una-página-404-personalizada">Creación de una página 404 personalizada</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h2 id="reconfiguración-de-_configyml">Reconfiguración de _config.yml</h2>
+<p style="text-align: justify;">Al editar el archivo <em>_config.yml</em> se permite configurar la mayoría de los valores de Jekyll, como los temas y los plugins del sitio web.</p>
+
+<p>En este caso, se han modificado los siguientes parametros:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><strong>VALORES</strong></th>
+      <th style="text-align: center"><strong>CAMBIOS</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>minimal_mistakes_skin</strong></td>
+      <td style="text-align: center"><em>air</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>locale</strong></td>
+      <td style="text-align: center"><em>es-ES</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>title</strong></td>
+      <td style="text-align: center"><em>Desarollo de Sistemas</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>subtitle</strong></td>
+      <td style="text-align: center"><em>Introducción al Desarrollo de Sistemas</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>name</strong></td>
+      <td style="text-align: center"><em>Kiana Bayani</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>description</strong></td>
+      <td style="text-align: center"><em>Creación de una página web haciendo uso de Jekyll para la asignatura de DMSI</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>base_url</strong></td>
+      <td style="text-align: center"><em>/intro2sd-kiana-bayani-nekoudin-alu0101318066/</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="despliegue-del-sitio-web-en-github-pages-haciendo-uso-de-jekyll">Despliegue del sitio web en GitHub Pages haciendo uso de Jekyll</h2>
+<p style="text-align: justify;">Para poder hacer el despliegue de nuestra página usando gh-pages hay que realizar el siguiente comando: <em>npx gh-pages -d _site</em>.</p>
+
+<ul style="text-align: justify;">
+  <li><strong>npx:</strong> es un ejecutor de paquetes basados en <em>Node.js</em>.</li>
+  <li><strong>gh-pages:</strong> es un paquete que contiene un módulo de despliegue automático que realiza las tareas necesarias para desplegar nuestra página web del repositorio en los servidores de gh-pages. Es decir, crea automáticamente una rama <em>gh-pages</em> en nuestro repositorio donde sitúa los archivos necesarios para el despliegue de la página web.</li>
+</ul>
+
+<p><br /></p>
+<div align="center"><img src="../img/pag_web.png" alt="imagen" /></div>
+
+<p>Enlazamos, además, la página web a nuestro perfil:</p>
+
+<h2 id="despliegue-del-sitio-web-en-netlify">Despliegue del sitio web en Netlify</h2>
+
+<h2 id="utilización-de-liquid">Utilización de liquid</h2>
+<p style="text-align: justify;">Se ha creado un archivo denominado <em>tutu.json</em> en la carpeta <em>_data</em> donde se encuentra un poco de información sobre el tema resumido. Para que esto sea visible en el informe, se ha hecho uso de <strong>liquid</strong>. El cual se trata de un lenguaje de plantilla que nos permite exhibir datos en la misma.</p>
+
+<p>Trozo de código utilizado en la página <em>intro2sd.md</em>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    {% for contenidos in site.data.tarea.desarrollo_sistemas.deslocalizacion -%} 
+    * {{ contenidos }}
+    {% for contenidosd in site.data.tarea.desarrollo_sistemas.contenido_deslocalizacion -%}
+    {{ contenidosd }}
+    {% endfor %}
+    {% endfor -%}
+
+
+    {% for contenidos in site.data.tarea.desarrollo_sistemas.subcontratacion -%} 
+    * {{ contenidos }}
+    {% for contenidoss in site.data.tarea.desarrollo_sistemas.contenido_subcontratacion -%} 
+        {{ contenidoss }}
+    {% endfor %}
+    {% endfor -%}
+
+</code></pre></div></div>
+
+<p>Trozo de código utilizado en la página <em>README.md</em>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+El capítulo resumido es el {{ site.data.tareas.capitulos[1] }} del libro {{ site.data.tareas.titulo }}.
+
+</code></pre></div></div>
+
+<h2 id="creación-de-una-jekyll-collection">Creación de una Jekyll Collection</h2>
+<p style="text-align: justify;">Se ha creado una colección que incluye un post con un vídeo de youtube y el resumen realizado. 
+En el archivo <em>_config.yml</em>, se define la colección en la sección de <em>collections</em> denominada <em>informe</em>:</p>
+
+<div align="center"><img src="../img/collections.png" alt="imagen" /></div>
+<p style="text-align: justify;"><br />
+Se añade el parámetro <em>output = true</em> para que Jekyll cree una página:</p>
+
+<div align="center"><img src="../img/defaults.png" alt="imagen" /></div>
+<p><br />
+El capítulo resumido es el 1 del libro Introducción al Desarrollo de Sistemas.</p>
+
+<h2 id="creación-de-una-página-404-personalizada">Creación de una página 404 personalizada</h2>
+<p style="text-align: justify;">Se ha creado un fichero denominado <em>404.md</em> donde se han detallado los parámetros necesarios para la creación de la página 404 de nuestra web.</p>
+
+<p style="text-align: justify;">Se ha hecho uso de los servicios web <em>CAT API</em> y <em>QUOTE API</em> para que cada vez que se entre a la página nos muestre una imagen aleatoria de un gato y una cita famosa con su autor.</p>
+
+<p style="text-align: justify;">Un ejemplo de la página 404 es la siguiente:</p>
+
+<div align="center"><img src="../img/pag_404_buena.png" alt="imagen" /></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-11-08T00:00:00-05:00">November 8, 2022</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=mmistakes&text=README+P04%3A+Introducci%C3%B3n+al+Desarrollo+de+Sistemas%20https%3A%2F%2Fmmistakes.github.io%2Fintro2sd-kiana-bayani-nekoudin-alu0101318066%2FREADME%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmmistakes.github.io%2Fintro2sd-kiana-bayani-nekoudin-alu0101318066%2FREADME%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmmistakes.github.io%2Fintro2sd-kiana-bayani-nekoudin-alu0101318066%2FREADME%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/jekyll/post-exclude-search/" class="pagination--pager" title="Exclude Post from Search Index
+">Previous</a>
+    
+    
+      <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/post/post-future-date/" class="pagination--pager" title="Post: Future Date
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <div align="center" style="margin: 1em 0;">
+        <ins class="adsbygoogle"
+              style="display:block; border-bottom: initial;"
+              data-ad-client="ca-pub-7328585512091257"
+              data-ad-slot="3049671934"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+      </div>
+      <h2 class="page__related-title">You May Also Enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/post/post-future-date/" rel="permalink">Post: Future Date
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This post lives in the future and is dated Fri Dec 31 00:00:00 9999. When building Jekyll with the --future flag it should appear.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/jekyll/post-exclude-search/" rel="permalink">Exclude Post from Search Index
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This post should not appear in the search index because it has the following YAML Front Matter:
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/layout/uncategorized/layout-header-video/" rel="permalink">Layout: Header Video
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This post should display a header with a responsive video, if the theme supports it.
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/jekyll/gemified-theme-beta/" rel="permalink">Gemified Theme – Beta Release
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Hot on the heels of Jekyll v3.3.0 is a beta release of Minimal Mistakes… as a gemified theme.
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+      <div align="center" style="margin: 1em 0;">
+        <ins class="adsbygoogle"
+             style="display:block; border-bottom: initial;"
+             data-ad-client="ca-pub-7328585512091257"
+             data-ad-slot="3049671934"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+  <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Kiana Bayani. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/intro2sd-kiana-bayani-nekoudin-alu0101318066/assets/js/main.min.js"></script>
+
+
+<!-- Including InstantSearch.js library and styling -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css">
+
+<script>
+// Instanciating InstantSearch.js with Algolia credentials
+const search = instantsearch({
+  appId: 'QB6HVGBSBA',
+  apiKey: '9d5014e5bbc77372547bce778dfa5663',
+  indexName: 'minimal_mistakes',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ]
+  }
+});
+
+const hitTemplate = function(hit) {
+  const url = hit.url;
+  const title = hit._highlightResult.title.value;
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="list__item">
+      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="/intro2sd-kiana-bayani-nekoudin-alu0101318066/${url}">${title}</a></h2>
+        <div class="archive__item-excerpt" itemprop="description">${content}</div>
+      </article>
+    </div>
+  `;
+}
+
+// Adding searchbar and results widgets
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '.search-searchbar',
+    poweredBy: true,
+    placeholder: 'Enter your search term...'
+  })
+);
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '.search-hits',
+    templates: {
+      item: hitTemplate,
+      empty: 'No results',
+    }
+  })
+);
+
+// Starting the search only when toggle is clicked
+$(document).ready(function () {
+  $(".search__toggle").on("click", function() {
+    if(!search.started) {
+      search.start();
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+    <style>
+      .google-auto-placed {
+        margin: 2em auto;
+      }
+    </style>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  </body>
+</html>

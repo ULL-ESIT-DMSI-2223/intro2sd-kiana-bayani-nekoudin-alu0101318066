@@ -1,82 +1,112 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/" rel="alternate" type="text/html" /><updated>2022-10-24T06:22:40-04:00</updated><id>https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/feed.xml</id><title type="html">Desarrollo de Sistemas</title><subtitle>A flexible Jekyll theme for your blog or site with a minimalist aesthetic.</subtitle><author><name>Kiana Bayani</name></author><entry><title type="html">Post: Future Date</title><link href="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/post/post-future-date/" rel="alternate" type="text/html" title="Post: Future Date" /><published>9999-12-31T00:00:00-05:00</published><updated>9999-12-31T00:00:00-05:00</updated><id>https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/post/post-future-date</id><content type="html" xml:base="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/post/post-future-date/">&lt;p&gt;This post lives in the future and is dated Fri Dec 31 00:00:00 9999. When building Jekyll with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--future&lt;/code&gt; flag it should appear.&lt;/p&gt;</content><author><name>Kiana Bayani</name></author><category term="Post" /><summary type="html">This post lives in the future and is dated Fri Dec 31 00:00:00 9999. When building Jekyll with the --future flag it should appear.</summary></entry><entry><title type="html">1.- Introducción al Desarrollo de Sistemas</title><link href="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/post%20formats/informe/" rel="alternate" type="text/html" title="1.- Introducción al Desarrollo de Sistemas" /><published>2022-10-01T00:00:00-04:00</published><updated>2022-10-01T00:00:00-04:00</updated><id>https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/post%20formats/informe</id><content type="html" xml:base="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/post%20formats/informe/">&lt;p&gt;El título de esta página es: 1.- Introducción al Desarrollo de Sistemas&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/" rel="alternate" type="text/html" /><updated>2022-11-09T14:57:11-05:00</updated><id>https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/feed.xml</id><title type="html">Desarrollo de Sistemas</title><subtitle>Creación de una página web haciendo uso de Jekyll para la asignatura de DMSI</subtitle><author><name>Kiana Bayani</name></author><entry><title type="html">Post: Future Date</title><link href="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/post/post-future-date/" rel="alternate" type="text/html" title="Post: Future Date" /><published>9999-12-31T00:00:00-05:00</published><updated>9999-12-31T00:00:00-05:00</updated><id>https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/post/post-future-date</id><content type="html" xml:base="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/post/post-future-date/">&lt;p&gt;This post lives in the future and is dated Fri Dec 31 00:00:00 9999. When building Jekyll with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--future&lt;/code&gt; flag it should appear.&lt;/p&gt;</content><author><name>Kiana Bayani</name></author><category term="Post" /><summary type="html">This post lives in the future and is dated Fri Dec 31 00:00:00 9999. When building Jekyll with the --future flag it should appear.</summary></entry><entry><title type="html">README P04: Introducción al Desarrollo de Sistemas</title><link href="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/README/" rel="alternate" type="text/html" title="README P04: Introducción al Desarrollo de Sistemas" /><published>2022-11-08T00:00:00-05:00</published><updated>2022-11-08T00:00:00-05:00</updated><id>https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/README</id><content type="html" xml:base="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/README/">&lt;h2 id=&quot;reconfiguración-de-_configyml&quot;&gt;Reconfiguración de _config.yml&lt;/h2&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;Al editar el archivo &lt;em&gt;_config.yml&lt;/em&gt; se permite configurar la mayoría de los valores de Jekyll, como los temas y los plugins del sitio web.&lt;/p&gt;
 
-&lt;p&gt;Esta página tiene una variable tags que es una lista con estos valores: Post Formatsreadabilitystandard&lt;/p&gt;
+&lt;p&gt;En este caso, se han modificado los siguientes parametros:&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Post Formats&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;readability&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;standard&lt;/p&gt;
-  &lt;/li&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;VALORES&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;CAMBIOS&lt;/strong&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;minimal_mistakes_skin&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;air&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;locale&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;es-ES&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;title&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Desarollo de Sistemas&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;subtitle&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Introducción al Desarrollo de Sistemas&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;name&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Kiana Bayani&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;description&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Creación de una página web haciendo uso de Jekyll para la asignatura de DMSI&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;base_url&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;/intro2sd-kiana-bayani-nekoudin-alu0101318066/&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;despliegue-del-sitio-web-en-github-pages-haciendo-uso-de-jekyll&quot;&gt;Despliegue del sitio web en GitHub Pages haciendo uso de Jekyll&lt;/h2&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;Para poder hacer el despliegue de nuestra página usando gh-pages hay que realizar el siguiente comando: &lt;em&gt;npx gh-pages -d _site&lt;/em&gt;.&lt;/p&gt;
+
+&lt;ul style=&quot;text-align: justify;&quot;&gt;
+  &lt;li&gt;&lt;strong&gt;npx:&lt;/strong&gt; es un ejecutor de paquetes basados en &lt;em&gt;Node.js&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;gh-pages:&lt;/strong&gt; es un paquete que contiene un módulo de despliegue automático que realiza las tareas necesarias para desplegar nuestra página web del repositorio en los servidores de gh-pages. Es decir, crea automáticamente una rama &lt;em&gt;gh-pages&lt;/em&gt; en nuestro repositorio donde sitúa los archivos necesarios para el despliegue de la página web.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;the-walking-dead&quot;&gt;The Walking Dead&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;../img/pag_web.png&quot; alt=&quot;imagen&quot; /&gt;&lt;/div&gt;
 
-&lt;p&gt;En las 10 temporadas de The Walking Dead vimos muchos colores:&lt;/p&gt;
+&lt;p&gt;Enlazamos, además, la página web a nuestro perfil:&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;rojo&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;verde&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;azul&lt;/p&gt;
+&lt;h2 id=&quot;despliegue-del-sitio-web-en-netlify&quot;&gt;Despliegue del sitio web en Netlify&lt;/h2&gt;
 
-    &lt;p&gt;rojo&lt;/p&gt;
+&lt;h2 id=&quot;utilización-de-liquid&quot;&gt;Utilización de liquid&lt;/h2&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;Se ha creado un archivo denominado &lt;em&gt;tutu.json&lt;/em&gt; en la carpeta &lt;em&gt;_data&lt;/em&gt; donde se encuentra un poco de información sobre el tema resumido. Para que esto sea visible en el informe, se ha hecho uso de &lt;strong&gt;liquid&lt;/strong&gt;. El cual se trata de un lenguaje de plantilla que nos permite exhibir datos en la misma.&lt;/p&gt;
 
-    &lt;p&gt;verde&lt;/p&gt;
+&lt;p&gt;Trozo de código utilizado en la página &lt;em&gt;intro2sd.md&lt;/em&gt;:&lt;/p&gt;
 
-    &lt;p&gt;azul&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;azul&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;verde&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;rojo&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+    {% for contenidos in site.data.tarea.desarrollo_sistemas.deslocalizacion -%} 
+    * {{ contenidos }}
+    {% for contenidosd in site.data.tarea.desarrollo_sistemas.contenido_deslocalizacion -%}
+    {{ contenidosd }}
+    {% endfor %}
+    {% endfor -%}
 
-&lt;p&gt;&lt;strong&gt;El desarrollo de sistemas&lt;/strong&gt; es el proceso de tomar un conjunto de requisitos comerciales y, a través de una serie de etapas estructuradas, traducirlos en un sistema IT operativo. Las principales etapas del desarrollo de sistemas son:&lt;/p&gt;
 
-&lt;p&gt;La relación del desarrollo de sistemas con otras disciplinas puede resumirse como sigue:&lt;/p&gt;
+    {% for contenidos in site.data.tarea.desarrollo_sistemas.subcontratacion -%} 
+    * {{ contenidos }}
+    {% for contenidoss in site.data.tarea.desarrollo_sistemas.contenido_subcontratacion -%} 
+        {{ contenidoss }}
+    {% endfor %}
+    {% endfor -%}
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Gestión de proyectos:&lt;/strong&gt; Planifica la empresa, moviliza los recursos necesarios y controla y coordina el trabajo. También asegura que las diversas partes interesadas se mantengan al tanto y comprometidas con el éxito del proyecto. Una buena gestión de proyectos libera al equipo de desarrollo para que se concentre en al difícil tarea técnnica de diseñar e implementar la solución.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Análisis de negocios:&lt;/strong&gt; Se preocupa por investigar la situación empresarial y averiguar cuáles son los problemas a resolver o las oportunidades a explotar. Se trata de desarrollar soluciones holísticas a los problemas de negocio. También son importantes para obtener, documentar y gestionar los requisitos de los sistemas y servicios de IT nuevos o mejorados.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Arquitectura de sistemas:&lt;/strong&gt; Desarrollar una arquitectura para que la organización apoye y coordine sus sistemas y proporcione una plataforma coherente para la expansión y el desarrollo.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Programación:&lt;/strong&gt; Esta es un área especializada que requiere altos niveles de experiencia técnica, sobre todo en cómo explotar al máximo las posibilidades que ofrecen el hardware y el software disponibles.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Pruebas:&lt;/strong&gt; Para demostrar que el sistema no funciona. Es un proceso iterativo y, cuando el evaluador se esfuerza por identificar más defectos en cualquier versión, se puede afirmar con cierta confianza que el sistema parece ser satisfactorio. Ninguna prueba puede garantizar que el software esté cien por ciento libre de errores.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Gestión de la configuración de control de cambios:&lt;/strong&gt; Relacionado con el control de cambios, que es un proceso para gestionar cambios en un sistema o producto de forma controlada.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Control de calidad:&lt;/strong&gt; Consiste en los procesos que se emplean dentro de un equipo de proyecto para garantizar que los productos entregados cumplan con los criterios de calidad definidos.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Aseguramiento de la calidad:&lt;/strong&gt; Es un proceso externo que se asegura que se está ejerciendo el control de calidad; también establece cosas como estándares para ayudar en el control de calidad.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Gestión de servicios:&lt;/strong&gt; Preocupado por la gestión y el mantenimiento de los servicios prestados por los sistemas de IT.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;deslocalización-y-subcontratación-de-desarrollo-de-sistemas&quot;&gt;Deslocalización y subcontratación de desarrollo de sistemas&lt;/h2&gt;
+&lt;p&gt;Trozo de código utilizado en la página &lt;em&gt;README.md&lt;/em&gt;:&lt;/p&gt;
 
-&lt;p&gt;Dos cambios que han afectado a muchas organizaciones en los últimos años han sido la deslocalización y/o externalización del trabajo de desarrollo de sistemas.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+El capítulo resumido es el {{ site.data.tareas.capitulos[1] }} del libro {{ site.data.tareas.titulo }}.
 
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Deslocalización:&lt;/strong&gt; Implica el uso de recursos de desarrollo en otros países, generalmente porque se pueden obtener recursos de alta calidad a un costo considerablemente menor que en el país de la organización.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Subcontratación:&lt;/strong&gt; Significa ceder el trabajo de desarrollo a empresas y consultorías especializadas en servicios IT.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;A veces se combinan pero también tienen posibles inconvenientes:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Deslocalización:&lt;/strong&gt; Pueden suceder retrasos y dificultades de comunicación. Refuerza la necesidad de una mayor precisión en la definición de los requisitos comerciales, lo cual es bueno.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Subcontratación:&lt;/strong&gt; La organización del cliente pierde el control directo de los sistemas que son críticos para sus objetivos comerciales.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&quot;creación-de-una-jekyll-collection&quot;&gt;Creación de una Jekyll Collection&lt;/h2&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;Se ha creado una colección que incluye un post con un vídeo de youtube y el resumen realizado. 
+En el archivo &lt;em&gt;_config.yml&lt;/em&gt;, se define la colección en la sección de &lt;em&gt;collections&lt;/em&gt; denominada &lt;em&gt;informe&lt;/em&gt;:&lt;/p&gt;
 
-&lt;p&gt;Ahmed, Tahir, et al. Developing Information Systems : Practical guidance for IT professionals, edited by James Cadle, BCS Learning &amp;amp; Development Limited, 2014. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bull-ebooks/detail.action?docID=1713962.&lt;/p&gt;</content><author><name>Kiana Bayani</name></author><category term="Post Formats" /><category term="Post Formats" /><category term="readability" /><category term="standard" /><summary type="html">El título de esta página es: 1.- Introducción al Desarrollo de Sistemas Esta página tiene una variable tags que es una lista con estos valores: Post Formatsreadabilitystandard Post Formats readability standard The Walking Dead En las 10 temporadas de The Walking Dead vimos muchos colores: rojo verde azul rojo verde azul azul verde rojo El desarrollo de sistemas es el proceso de tomar un conjunto de requisitos comerciales y, a través de una serie de etapas estructuradas, traducirlos en un sistema IT operativo. Las principales etapas del desarrollo de sistemas son: La relación del desarrollo de sistemas con otras disciplinas puede resumirse como sigue: Gestión de proyectos: Planifica la empresa, moviliza los recursos necesarios y controla y coordina el trabajo. También asegura que las diversas partes interesadas se mantengan al tanto y comprometidas con el éxito del proyecto. Una buena gestión de proyectos libera al equipo de desarrollo para que se concentre en al difícil tarea técnnica de diseñar e implementar la solución. Análisis de negocios: Se preocupa por investigar la situación empresarial y averiguar cuáles son los problemas a resolver o las oportunidades a explotar. Se trata de desarrollar soluciones holísticas a los problemas de negocio. También son importantes para obtener, documentar y gestionar los requisitos de los sistemas y servicios de IT nuevos o mejorados. Arquitectura de sistemas: Desarrollar una arquitectura para que la organización apoye y coordine sus sistemas y proporcione una plataforma coherente para la expansión y el desarrollo. Programación: Esta es un área especializada que requiere altos niveles de experiencia técnica, sobre todo en cómo explotar al máximo las posibilidades que ofrecen el hardware y el software disponibles. Pruebas: Para demostrar que el sistema no funciona. Es un proceso iterativo y, cuando el evaluador se esfuerza por identificar más defectos en cualquier versión, se puede afirmar con cierta confianza que el sistema parece ser satisfactorio. Ninguna prueba puede garantizar que el software esté cien por ciento libre de errores. Gestión de la configuración de control de cambios: Relacionado con el control de cambios, que es un proceso para gestionar cambios en un sistema o producto de forma controlada. Control de calidad: Consiste en los procesos que se emplean dentro de un equipo de proyecto para garantizar que los productos entregados cumplan con los criterios de calidad definidos. Aseguramiento de la calidad: Es un proceso externo que se asegura que se está ejerciendo el control de calidad; también establece cosas como estándares para ayudar en el control de calidad. Gestión de servicios: Preocupado por la gestión y el mantenimiento de los servicios prestados por los sistemas de IT. Deslocalización y subcontratación de desarrollo de sistemas Dos cambios que han afectado a muchas organizaciones en los últimos años han sido la deslocalización y/o externalización del trabajo de desarrollo de sistemas. Deslocalización: Implica el uso de recursos de desarrollo en otros países, generalmente porque se pueden obtener recursos de alta calidad a un costo considerablemente menor que en el país de la organización. Subcontratación: Significa ceder el trabajo de desarrollo a empresas y consultorías especializadas en servicios IT. A veces se combinan pero también tienen posibles inconvenientes: Deslocalización: Pueden suceder retrasos y dificultades de comunicación. Refuerza la necesidad de una mayor precisión en la definición de los requisitos comerciales, lo cual es bueno. Subcontratación: La organización del cliente pierde el control directo de los sistemas que son críticos para sus objetivos comerciales. Ahmed, Tahir, et al. Developing Information Systems : Practical guidance for IT professionals, edited by James Cadle, BCS Learning &amp;amp; Development Limited, 2014. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bull-ebooks/detail.action?docID=1713962.</summary></entry><entry><title type="html">Exclude Post from Search Index</title><link href="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/jekyll/post-exclude-search/" rel="alternate" type="text/html" title="Exclude Post from Search Index" /><published>2017-11-28T00:00:00-05:00</published><updated>2018-02-19T08:06:00-05:00</updated><id>https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/jekyll/post-exclude-search</id><content type="html" xml:base="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/jekyll/post-exclude-search/">&lt;p&gt;This post should not appear in the search index because it has the following YAML Front Matter:&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;../img/collections.png&quot; alt=&quot;imagen&quot; /&gt;&lt;/div&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;
+Se añade el parámetro &lt;em&gt;output = true&lt;/em&gt; para que Jekyll cree una página:&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;../img/defaults.png&quot; alt=&quot;imagen&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+El capítulo resumido es el 1 del libro Introducción al Desarrollo de Sistemas.&lt;/p&gt;
+
+&lt;h2 id=&quot;creación-de-una-página-404-personalizada&quot;&gt;Creación de una página 404 personalizada&lt;/h2&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;Se ha creado un fichero denominado &lt;em&gt;404.md&lt;/em&gt; donde se han detallado los parámetros necesarios para la creación de la página 404 de nuestra web.&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;Se ha hecho uso de los servicios web &lt;em&gt;CAT API&lt;/em&gt; y &lt;em&gt;QUOTE API&lt;/em&gt; para que cada vez que se entre a la página nos muestre una imagen aleatoria de un gato y una cita famosa con su autor.&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;Un ejemplo de la página 404 es la siguiente:&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;../img/pag_404_buena.png&quot; alt=&quot;imagen&quot; /&gt;&lt;/div&gt;</content><author><name>Kiana Bayani</name></author><summary type="html">Reconfiguración de _config.yml Al editar el archivo _config.yml se permite configurar la mayoría de los valores de Jekyll, como los temas y los plugins del sitio web. En este caso, se han modificado los siguientes parametros: VALORES CAMBIOS minimal_mistakes_skin air locale es-ES title Desarollo de Sistemas subtitle Introducción al Desarrollo de Sistemas name Kiana Bayani description Creación de una página web haciendo uso de Jekyll para la asignatura de DMSI base_url /intro2sd-kiana-bayani-nekoudin-alu0101318066/ Despliegue del sitio web en GitHub Pages haciendo uso de Jekyll Para poder hacer el despliegue de nuestra página usando gh-pages hay que realizar el siguiente comando: npx gh-pages -d _site. npx: es un ejecutor de paquetes basados en Node.js. gh-pages: es un paquete que contiene un módulo de despliegue automático que realiza las tareas necesarias para desplegar nuestra página web del repositorio en los servidores de gh-pages. Es decir, crea automáticamente una rama gh-pages en nuestro repositorio donde sitúa los archivos necesarios para el despliegue de la página web. Enlazamos, además, la página web a nuestro perfil: Despliegue del sitio web en Netlify Utilización de liquid Se ha creado un archivo denominado tutu.json en la carpeta _data donde se encuentra un poco de información sobre el tema resumido. Para que esto sea visible en el informe, se ha hecho uso de liquid. El cual se trata de un lenguaje de plantilla que nos permite exhibir datos en la misma. Trozo de código utilizado en la página intro2sd.md: {% for contenidos in site.data.tarea.desarrollo_sistemas.deslocalizacion -%} * {{ contenidos }} {% for contenidosd in site.data.tarea.desarrollo_sistemas.contenido_deslocalizacion -%} {{ contenidosd }} {% endfor %} {% endfor -%} {% for contenidos in site.data.tarea.desarrollo_sistemas.subcontratacion -%} * {{ contenidos }} {% for contenidoss in site.data.tarea.desarrollo_sistemas.contenido_subcontratacion -%} {{ contenidoss }} {% endfor %} {% endfor -%} Trozo de código utilizado en la página README.md: El capítulo resumido es el {{ site.data.tareas.capitulos[1] }} del libro {{ site.data.tareas.titulo }}. Creación de una Jekyll Collection Se ha creado una colección que incluye un post con un vídeo de youtube y el resumen realizado. En el archivo _config.yml, se define la colección en la sección de collections denominada informe: Se añade el parámetro output = true para que Jekyll cree una página: El capítulo resumido es el 1 del libro Introducción al Desarrollo de Sistemas. Creación de una página 404 personalizada Se ha creado un fichero denominado 404.md donde se han detallado los parámetros necesarios para la creación de la página 404 de nuestra web. Se ha hecho uso de los servicios web CAT API y QUOTE API para que cada vez que se entre a la página nos muestre una imagen aleatoria de un gato y una cita famosa con su autor. Un ejemplo de la página 404 es la siguiente:</summary></entry><entry><title type="html">Exclude Post from Search Index</title><link href="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/jekyll/post-exclude-search/" rel="alternate" type="text/html" title="Exclude Post from Search Index" /><published>2017-11-28T00:00:00-05:00</published><updated>2018-02-19T08:06:00-05:00</updated><id>https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/jekyll/post-exclude-search</id><content type="html" xml:base="https://mmistakes.github.io/intro2sd-kiana-bayani-nekoudin-alu0101318066/jekyll/post-exclude-search/">&lt;p&gt;This post should not appear in the search index because it has the following YAML Front Matter:&lt;/p&gt;
 
 &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
