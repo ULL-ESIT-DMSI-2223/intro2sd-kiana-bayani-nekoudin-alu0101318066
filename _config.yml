@@ -7,15 +7,15 @@
 
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "es-ES"
 title                    : "Desarrollo de Sistemas"
 title_separator          : "-"
 subtitle                 : "Introducción al Desarrollo de Sistemas"
 name                     : &name "Kiana Bayani" # &name is a YAML anchor which can be *referenced later
-description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
+description              : &description "Creación de una página web haciendo uso de Jekyll para la asignatura de DMSI"
 url                      : https://mmistakes.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/intro2sd-kiana-bayani-nekoudin-alu0101318066/" # the subpath of your site, e.g. "/blog"
 repository               : "mmistakes/minimal-mistakes"
