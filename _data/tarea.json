@@ -1,11 +1,7 @@
 { 
-    "titulo": "The Walking Dead",
-    "temporadas": 10,
-    "colores":  {
-        "alumnos": ["guillermo", "jorge", "patricia", "marta", "kiana"],
-        "color": ["rojo", "verde", "azul"],
-        "texto": "Sección de Colores"
-    },
+    "titulo": "Introducción al Desarrollo de Sistemas",
+    
+    "capitulos": [0, 1, 2],
 
     "desarrollo_sistemas": {
         "deslocalizacion": "Deslocalización: ",
