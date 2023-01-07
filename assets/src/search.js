@@ -1,21 +1,22 @@
 class JekyllSearch {
-  constructor(dataSource, SearchField, resultsList, siteURL) {
+  constructor(searchField, resultsList, dataSource, siteURL) {
     this.dataSource = dataSource
-    this.SearchField = document.querySelector(SearchField)
+    this.searchField = document.querySelector(searchField)
     this.resultsList = document.querySelector(resultsList)
     this.siteURL = siteURL
 
     this.data = [];
   }
 
+
   fetchedData() {
-    return fetch(this.dataSource,
-      { mode: 'no-cors' }).then(blob => blob.json())
+    return fetch(this.dataSource, {mode: 'no-cors'})
+      .then(blob => blob.json())
   }
 
   async findResults() {
     this.data = await this.fetchedData()
-    const regex = new RegExp(this.SearchField.value, 'i')
+    const regex = new RegExp(this.searchField.value, "i")
     return this.data.filter(item => {
       return item.title.match(regex) || item.content.match(regex)
     })
@@ -23,45 +24,41 @@ class JekyllSearch {
 
   async displayResults() {
     const results = await this.findResults()
-    //console.log('this.siteURL = ',this.siteURL)
-
     const html = results.map(item => {
-      //console.log(item)
       return `
-          <li class="result">
-              <article class="result__article  article">
-                  <h4>
-                    <a href="${item.url}">${item.title}</a>
-                  </h4>
-                  <p>${item.excerpt}</p>
-              </article>
-          </li>`
+        <li class="result">
+          <article class="result__article article">
+            <h4>
+              <a href="${item.url}">${item.title}</a>
+            </h4>
+            <p>${item.excerpt}</p>
+          </article>
+        </li>
+      `
     }).join('')
-    if ((results.length == 0) || (this.SearchField.value == '')) {
-      this.resultsList.innerHTML = `<p>Sorry, nothing was found</p>`
+    if ((results.length === 0) || (this.searchField.value.length == '')) {
+      this.resultsList.innerHTML = `<p>Sorry, no results found.</p>`
     } else {
       this.resultsList.innerHTML = html
-    }
+    } 
   }
 
   // https://stackoverflow.com/questions/43431550/async-await-class-constructor
   init() {
-
+    
     const url = new URL(document.location)
-    if (url.searchParams.get("Search")) {
-      this.SearchField.value = url.searchParams.get("Search")
+    if (url.searchParams.get("search")) {
+      this.searchField.value = url.searchParams.get("search")
       this.displayResults()
     }
-    this.SearchField.addEventListener('keyup', () => {
+    this.searchField.addEventListener("keyup", () => {
       this.displayResults()
-      // So that when going back in the browser we keep the Search
-      url.searchParams.set("Search", this.SearchField.value)
+      url.searchParams.set("search", this.searchField.value)
       window.history.pushState('', '', url.href)
     })
 
-    // to not send the form each time <enter> is pressed
-    this.SearchField.addEventListener('keypress', event => {
-      if (event.keyCode == 13) {
+    this.searchField.addEventListener("keypress", event => {
+      if (event.keyCode === 13) {
         event.preventDefault()
       }
     })
